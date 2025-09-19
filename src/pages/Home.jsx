@@ -26,6 +26,7 @@ const Home = () => {
         <GoDotFill className='text-2xl text-gray-300 hover:text-red-700 cursor-pointer'/>
         <GoDotFill className='text-2xl text-gray-300 hover:text-red-700 cursor-pointer lg:hidden md:block'/>
       </div>
+      {/* offer container */}
       <div className='flex justify-center  '>
         <div className='relative bg-slate-100 p-[48px] lg:w-[1288px] lg:h-[190px] lg:flex-row lg:items-center lg:gap-70 
                         md:w-[688px] md:h-[323px] md:flex md:flex-col
@@ -36,12 +37,13 @@ const Home = () => {
         <p className='text-stone-900 font-bold lg:text-5xl lg:mb-2 md:text-[53px] md:leading-15 md:mb-2 sm:text-[54px] sm:leading-14 sm:mb-2 text-[54px] leading-14 mb-2'>10% OFF Discount Coupons</p>
         <p className='text-stone-600 lg:text-lg md:text-[19px] md:mb-4 sm:text-[19px] sm:mb-4 text-[19px] mb-4 '>Subscribe us to get 10% OFF on all the purchases</p>
         </div>
-        <div className='z-20 relative'>
+        <div className='z-20'>
         <button className='text-white cursor-pointer duration-200 hover:bg-red-600 lg:w-[190px] lg:h-[54px] bg-black lg:text-[18px] 
-                           md:w-[223px] md:h-[65px] md:text-[21px] md:z-20 sm:w-[223px] sm:h-[65px] sm:text-[19px] w-[223px] h-[65px] text-[19px]'>EMAIL ME</button>
+                           md:w-[218px] md:h-[60px] md:text-[21px] md:z-20 sm:w-[223px] sm:h-[65px] sm:text-[19px] w-[223px] h-[65px] text-[19px]'>EMAIL ME</button>
         </div>
+        <p className=' font-serif font-bold text-gray-300 absolute lg:right-0 lg:bottom-0 lg:text-[140px] 
+                       md:right-0 md:bottom-0 md:text-9xl sm:bottom-[-25px] sm:right-1 sm:text-[105px]'>10%OFF</p>
         </div>
-          {/* <p className=' font-serif font-bold text-gray-300 lg:top-8 lg:absolute lg:right-30 lg:text-[140px] md:text-[117px] md:absolute md:right-11 md:top-47'>10%OFF</p> */}
       </div>
       {/* card-image container */}
       <div className="w-full bg-white mt-25 lg:px-10 md:px-5 px-4">

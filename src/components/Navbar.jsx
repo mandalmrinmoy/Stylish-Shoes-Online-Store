@@ -6,23 +6,24 @@ import { CgSearch } from "react-icons/cg";
 import { BiMenuAltRight } from "react-icons/bi";
 import { RxCross1 } from "react-icons/rx";
 import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom';
 
 const Navbar = () => {
   const [isShow, setIsSlow] = useState(false)
   return (
     <>
       <div className='w-full '>
-        <div className='realtive max-w-screen h-[70px] font-sans mt-2 mx-auto px-4 
+        <div className='realtive max-w-screen h-[70px] font-sans mt-2 mx-auto px-4  w-full
                     lg:flex lg:justify-between 
                     md:flex md:justify-between
                     sm:flex sm:justify-between
                     flex justify-between
                     '>
           {/* logo-containet */}
-          <div><img src={logo} alt="Logo" className='w-[130px] cursor-pointer' /></div>
+          <div><Link to="/"><img src={logo} alt="Logo" className='w-[130px] cursor-pointer' /></Link></div>
           {/* pages container */}
-          <div className=' w-[50%] right-0 bg-white 
-                           lg:flex lg:items-center lg:justify-between 
+          <div className=' right-0 bg-white w-[50%]
+                           lg:flex lg:items-center lg:justify-between lg:w-[55%]
                            md:flex md:items-center md:justify-between
                            sm:flex sm:items-center sm:justify-between
                            flex items-center justify-between
@@ -40,7 +41,7 @@ const Navbar = () => {
             </div>
             {/* pages right container--icon */}
             <div className='flex gap-4'>
-              <GoPerson className='text-2xl cursor-pointer ' />
+              <Link to="/login"><GoPerson className='text-2xl cursor-pointer ' /></Link>
               <BiCartAlt className='text-2xl cursor-pointer ' />
               <CgSearch className='text-2xl cursor-pointer ' />
             </div>
@@ -52,10 +53,11 @@ const Navbar = () => {
         </div>
         {
           isShow && (
+            <div className='w-screen h-screen'>
             <div className='flex justify-end lg:hidden'>
-              <div className='w-[50%] h-full bg-amber-100 p-4 absolute md:mt-[-175px] sm:mt-[-120px] mt-[-120px] z-30'>
+              <div className='w-[100%] h-screen bg-amber-100 p-4 absolute md:w-[50%] md:mt-[-175px] sm:w-[60%] sm:mt-[-120px] mt-[-120px]'>
                 <div className=' right-0 flex justify-between '>
-                  <div><img src={logo} alt="Logo" className='w-[110px]' /></div>
+                  <div><img src={logo} alt="Logo" className='w-[110px] cursor-pointer' /></div>
                   <RxCross1 className='text-2xl cursor-pointer' onClick={() => setIsSlow(!isShow)} />
                 </div>
                 <div className='mt-5'>
@@ -69,6 +71,7 @@ const Navbar = () => {
                   </ul>
                 </div>
               </div>
+            </div>
             </div>
           )
         }

@@ -19,6 +19,7 @@ function App() {
         <TopNavbar/>
         <Navbar/>
         <Home/>
+        <Footer/>
       </div>
     },
     {
@@ -40,8 +41,8 @@ function App() {
     {
       path:'/login',
       element:<div>
-         <TopNavbar/>
-         <Navbar/>
+         {/* <TopNavbar/>
+         <Navbar/> */}
         <Login/>
       </div>
     },
