@@ -32,11 +32,11 @@ const Navbar = () => {
             <div className='lg:block md:hidden sm:hidden hidden'>
               <ul className='lg:flex lg:gap-8 lg:items-center '>
                 <li className='font-bold text-[17px] text-gray-800 cursor-pointer'><NavLink to="/">Home</NavLink></li>
-                <li className='font-bold text-[17px] text-gray-800 cursor-pointer'><NavLink to="/man">Men</NavLink></li>
-                <li className='font-bold text-[17px] text-gray-800 cursor-pointer'><NavLink to="/woman">Women</NavLink></li>
-                <li className='font-bold text-[17px] text-gray-800 cursor-pointer'><NavLink to="/page">Page</NavLink></li>
-                <li className='font-bold text-[17px] text-gray-800 cursor-pointer'><NavLink to="/shop" >Shop</NavLink></li>
-                <li className='font-bold text-[17px] text-gray-800 cursor-pointer'><NavLink to="/sale">Sale</NavLink></li>
+                <li className='font-bold text-[17px] text-gray-800 cursor-pointer'><NavLink to="/">Men</NavLink></li>
+                <li className='font-bold text-[17px] text-gray-800 cursor-pointer'><NavLink to="/">Women</NavLink></li>
+                <li className='font-bold text-[17px] text-gray-800 cursor-pointer'><NavLink to="/">Page</NavLink></li>
+                <li className='font-bold text-[17px] text-gray-800 cursor-pointer'><NavLink to="/" >Shop</NavLink></li>
+                <li className='font-bold text-[17px] text-gray-800 cursor-pointer'><NavLink to="/">Sale</NavLink></li>
               </ul>
             </div>
             {/* pages right container--icon */}
@@ -63,11 +63,11 @@ const Navbar = () => {
                 <div className='mt-5'>
                   <ul className='flex flex-col gap-2'>
                     <li className='font-bold text-[34px] text-gray-700 cursor-pointer'><NavLink to="/">Home</NavLink></li>
-                    <li className='font-bold text-[34px] text-gray-700 cursor-pointer'><NavLink to="/man">Men</NavLink></li>
-                    <li className='font-bold text-[34px] text-gray-700 cursor-pointer'><NavLink to="/woman">Women</NavLink></li>
-                    <li className='font-bold text-[34px] text-gray-700 cursor-pointer'><NavLink to="/page">Page</NavLink></li>
-                    <li className='font-bold text-[34px] text-gray-700 cursor-pointer'><NavLink to="/shop" >Shop</NavLink></li>
-                    <li className='font-bold text-[34px] text-gray-700 cursor-pointer'><NavLink to="/sale">Sale</NavLink></li>
+                    <li className='font-bold text-[34px] text-gray-700 cursor-pointer'><NavLink to="/">Men</NavLink></li>
+                    <li className='font-bold text-[34px] text-gray-700 cursor-pointer'><NavLink to="/">Women</NavLink></li>
+                    <li className='font-bold text-[34px] text-gray-700 cursor-pointer'><NavLink to="/">Page</NavLink></li>
+                    <li className='font-bold text-[34px] text-gray-700 cursor-pointer'><NavLink to="/" >Shop</NavLink></li>
+                    <li className='font-bold text-[34px] text-gray-700 cursor-pointer'><NavLink to="/">Sale</NavLink></li>
                   </ul>
                 </div>
               </div>

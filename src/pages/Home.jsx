@@ -1,31 +1,14 @@
-  import {largeData} from "../data/largeImage"
+  // import {largeData} from "../data/largeImage"
   import { cardImageData } from "../data/cardImage";
-  import { GoDotFill } from "react-icons/go";
+  // import { GoDotFill } from "react-icons/go";
   import collection1 from "../assets/images/collection-item1.jpg"
   import collection2 from "../assets/images/collection-item2.jpg"
+import LargeGallery from "../components/LargeGallery";
 const Home = () => {
   return (
     <>
     <div className='w-full'>
-    <div className='max-w-screen flex justify-center'>
-      {largeData.slice(0,1).map((data)=>(
-        <div className='grid grid-cols-1 lg:grid-cols-2 mt-10 px-4 gap-10' key={data.id}>
-          <div>
-            <img src={data.src} alt="" className='rounded-lg' />
-          </div>
-          <div className='grid lg:grid-rows-2 gap-8'>
-            <img src={data.src} alt="" className='rounded-lg' />
-            <img src={data.src} alt="" className='rounded-lg' />
-          </div>
-        </div>
-      ))}
-      </div>
-      <div className='flex justify-center mt-9 mb-9'>
-        <GoDotFill className='text-2xl text-gray-300 hover:text-red-700 cursor-pointer'/>
-        <GoDotFill className='text-2xl text-gray-300 hover:text-red-700 cursor-pointer'/>
-        <GoDotFill className='text-2xl text-gray-300 hover:text-red-700 cursor-pointer'/>
-        <GoDotFill className='text-2xl text-gray-300 hover:text-red-700 cursor-pointer lg:hidden md:block'/>
-      </div>
+    <LargeGallery/>
       {/* offer container */}
       <div className='flex justify-center  '>
         <div className='relative bg-slate-100 p-[48px] lg:w-[1288px] lg:h-[190px] lg:flex-row lg:items-center lg:gap-70 
@@ -42,7 +25,7 @@ const Home = () => {
                            md:w-[218px] md:h-[60px] md:text-[21px] md:z-20 sm:w-[223px] sm:h-[65px] sm:text-[19px] w-[223px] h-[65px] text-[19px]'>EMAIL ME</button>
         </div>
         <p className=' font-serif font-bold text-gray-300 absolute lg:right-0 lg:bottom-0 lg:text-[140px] 
-                       md:right-0 md:bottom-0 md:text-9xl sm:bottom-[-25px] sm:right-1 sm:text-[105px]'>10%OFF</p>
+                       md:right-0 md:bottom-0 md:text-9xl hidden md:block'>10%OFF</p>
         </div>
       </div>
       {/* card-image container */}

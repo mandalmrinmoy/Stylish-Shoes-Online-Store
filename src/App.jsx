@@ -23,7 +23,7 @@ function App() {
       </div>
     },
     {
-      path:'/cart',
+      path:'/',
       element:<div>
         <TopNavbar/>
         <Navbar/>
@@ -31,7 +31,7 @@ function App() {
       </div>
     },
     {
-      path:'/contact',
+      path:'/',
       element:<div>
          <TopNavbar/>
          <Navbar/>
@@ -47,7 +47,7 @@ function App() {
       </div>
     },
     {
-      path:'/man',
+      path:'/',
       element:<div>
          <TopNavbar/>
          <Navbar/>
@@ -56,7 +56,7 @@ function App() {
       </div>
     },
     {
-      path:'/woman',
+      path:'/',
       element:<div>
          <TopNavbar/>
          <Navbar/>
@@ -65,7 +65,7 @@ function App() {
       </div>
     },
     {
-      path:'/page',
+      path:'/',
       element:<div>
          <TopNavbar/>
          <Navbar/>
@@ -74,7 +74,7 @@ function App() {
       </div>
     },
     {
-      path:'/shop',
+      path:'/',
       element:<div>
          <TopNavbar/>
          <Navbar/>
@@ -83,7 +83,7 @@ function App() {
       </div>
     },
     {
-      path:'/sale',
+      path:'/',
       element:<div>
          <TopNavbar/>
          <Navbar/>
